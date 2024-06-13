@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 193, 193);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 2rem;
+}
+
+.col-header {
+    width: 120px;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 9px rgba(169, 41, 41, 0.5);
+}
+
+.start {
+    background-color: rgb(64, 190, 32);
+    text-align: center;
+}
+
+.progress {
+    background-color: rgb(190, 145, 32);
+    text-align: center;
+}
+
+.done {
+    background-color: rgb(79, 32, 190);
+    text-align: center;
+}
+
+.placeholder {
+    width: 120px;
+    height: 60px;
+}
+
+.hovered {
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+.hovered::before {
+    content: 'Перетащи сюда';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    width: 120px;
+    height: 60px;
+    border: 2px solid red;
+    background-color: rgb(193, 230, 230);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    cursor: grab;
+}
+
+.hold {
+    color: black;
+    border: 2px solid green;
+    background-color: rgb(65, 69, 69);
+}
+
+.hide {
+    display: none;
+}
+
+.item:active {
+    cursor: grabbing;
+}
+
+
+
